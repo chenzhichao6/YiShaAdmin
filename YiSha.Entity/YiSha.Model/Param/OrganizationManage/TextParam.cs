@@ -12,5 +12,7 @@ namespace YiSha.Model.Param.OrganizationManage
     /// </summary>
     public class TextListParam
     {
+        [JsonConverter(typeof(DateTimeJsonConverter))]
+        public DateTime? Addtime { get; set; }
     }
 }
